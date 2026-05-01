@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 #define MAX_SCORE 256
-#define FRAME_TIME 110000
+#define FRAME_TIME 150000
 
 typedef struct {
   int x;
@@ -24,7 +24,7 @@ coords dir = {1, 0};
 coords head = {0, 0};
 coords segments[MAX_SCORE + 1];
 
-// Cheeck if coordinate a, and coordinate b
+// Check if coordinate a, and coordinate b
 // are same. Which means they collided!
 bool collide(coords a, coords b) {
   if (a.x == b.x && a.y == b.y) {
@@ -204,7 +204,7 @@ void update() {
   // eating a berry
   if (collide(head, berry)) {
     if (score < MAX_SCORE) {
-      score += 1;
+      score += 2;
       sprintf(score_message, "[ Score: %d ]", score);
     } else {
       // WIN!

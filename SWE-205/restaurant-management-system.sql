@@ -1,0 +1,9 @@
+SOURCE sql/00_setup.sql;
+SOURCE sql/01_tables.sql;
+SOURCE sql/02_indexes.sql;
+SOURCE sql/03_views.sql;
+SOURCE sql/04_functions.sql;
+SOURCE sql/05_procedures.sql;
+SOURCE sql/06_triggers.sql;
+SOURCE sql/07_sample_data.sql;
+SOURCE sql/08_demo.sql;

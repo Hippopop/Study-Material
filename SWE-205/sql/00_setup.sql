@@ -1,0 +1,9 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
+DROP DATABASE IF EXISTS restaurant_db;
+CREATE DATABASE restaurant_db;
+
+USE restaurant_db;
+SET FOREIGN_KEY_CHECKS = 1;
+
+
